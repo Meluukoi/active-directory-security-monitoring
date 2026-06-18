@@ -52,4 +52,4 @@ EventCode=4720
 
 #### Active Directory User Creation
 
-![User Creation](screenshots/user_creation_aduc.png)
+![User Creation](user_creation_aduc.png)
