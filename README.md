@@ -96,3 +96,46 @@ A password reset operation generated Event ID 4724 in the Windows Security Log. 
 ### Recommendation
 
 Monitor password reset activity and investigate unexpected administrative account actions.
+
+
+## User Deletion Investigation
+
+### Objective
+
+Investigate Active Directory account deletion activity using Windows Security Event ID 4726.
+
+### Action Performed
+
+A test user account was deleted from the Active Directory environment.
+
+### Evidence
+
+| Field | Value |
+|---------|---------|
+| Event ID | 4726 |
+| Description | A user account was deleted |
+| Source | Windows Security Log |
+
+### Screenshot
+
+#### Event ID 4726 - User Deletion
+
+![Event ID 4726](screenshots/eventid_4726_user_deleted.png)
+
+### MITRE ATT&CK
+
+**T1070 - Indicator Removal on Host**
+
+### Detection Logic
+
+```spl
+EventCode=4726
+```
+
+### Findings
+
+A user account deletion event was successfully recorded within the Windows Security Log and attributed to an administrative account.
+
+### Recommendation
+
+Monitor account deletion activity and verify all deletions are approved and documented.
