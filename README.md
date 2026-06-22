@@ -192,3 +192,30 @@ A privileged group membership modification was successfully identified within th
 ### Recommendation
 
 Monitor privileged group membership changes and verify that all modifications are authorized and documented. Investigate unexpected additions to administrative or privileged groups immediately.
+
+
+## Conclusion
+
+This project demonstrated the deployment and administration of an Active Directory environment using Windows Server 2022. Multiple security-relevant account management activities were performed and investigated through Windows Security Logs.
+
+Activities investigated included:
+
+- User Account Creation (Event ID 4720)
+- Password Reset Activity (Event ID 4724)
+- User Account Deletion (Event ID 4726)
+- Privileged Group Membership Changes (Event ID 4728/4732)
+
+The project provided hands-on experience with Active Directory administration, Windows Security Event analysis, PowerShell log investigation, and MITRE ATT&CK mapping from a SOC analyst perspective.
+
+## Skills Demonstrated
+
+- Active Directory Administration
+- Windows Server 2022
+- User and Group Management
+- Windows Event Logging
+- Security Monitoring
+- Event Investigation
+- PowerShell
+- Detection Engineering
+- MITRE ATT&CK Mapping
+- Security Documentation
