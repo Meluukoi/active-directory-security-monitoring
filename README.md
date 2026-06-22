@@ -75,7 +75,7 @@ The password for a domain user account was reset through Active Directory Users 
 
 ### Screenshot
 
-#### Event ID 4724 - Password Reset
+#### Active Directory User Creation - Password Reset
 
 ![User Creation](eventid_4724_powershell.png)
 
