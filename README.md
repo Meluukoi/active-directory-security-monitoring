@@ -139,3 +139,56 @@ A user account deletion event was successfully recorded within the Windows Secur
 ### Recommendation
 
 Monitor account deletion activity and verify all deletions are approved and documented.
+
+
+## Privileged Group Membership Investigation
+
+### Objective
+
+Investigate Active Directory privileged group membership modifications using Windows Security Event IDs 4728 and 4732.
+
+### Action Performed
+
+A test user account was added to a privileged Active Directory security group.
+
+### Active Directory Configuration
+
+The following screenshot shows the Active Directory environment containing the user account and privileged security group.
+
+![Active Directory Users and Groups](ad_users_and_groups.png)
+
+### Evidence
+
+| Field | Value |
+|---------|---------|
+| Event ID | 4728 |
+| Description | A member was added to a security-enabled global group |
+| Source | Windows Security Log |
+
+### Screenshot
+
+#### Event ID 4728 - Group Membership Change
+
+![Event ID 4728](eventid_4728_group_membership.png)
+
+### Security Relevance
+
+Unauthorized additions to privileged groups may indicate privilege escalation or persistence mechanisms used by threat actors.
+
+### MITRE ATT&CK
+
+**T1098 - Account Manipulation**
+
+### Detection Logic
+
+```spl
+EventCode=4728 OR EventCode=4732
+```
+
+### Findings
+
+A privileged group membership modification was successfully identified within the Windows Security Log. The event recorded the addition of a user account to a security-enabled group.
+
+### Recommendation
+
+Monitor privileged group membership changes and verify that all modifications are authorized and documented. Investigate unexpected additions to administrative or privileged groups immediately.
