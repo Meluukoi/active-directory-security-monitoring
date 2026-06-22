@@ -77,7 +77,7 @@ The password for a domain user account was reset through Active Directory Users 
 
 #### Active Directory User Creation - Password Reset
 
-![User Creation](eventid_4724_powershell.png)
+![Event ID 4724](eventid_4724_powershell.png)
 
 ### MITRE ATT&CK
 
