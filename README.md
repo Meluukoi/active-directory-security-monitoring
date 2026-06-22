@@ -53,3 +53,46 @@ EventCode=4720
 #### Active Directory User Creation
 
 ![User Creation](user_creation_aduc.png)
+
+
+## Password Reset Investigation
+
+### Objective
+
+Investigate Active Directory password reset activity using Windows Security Event ID 4724.
+
+### Action Performed
+
+The password for a domain user account was reset through Active Directory Users and Computers.
+
+### Evidence
+
+| Field | Value |
+|---------|---------|
+| Event ID | 4724 |
+| Description | An attempt was made to reset an account's password |
+| Source | Windows Security Log |
+
+### Screenshot
+
+#### Event ID 4724 - Password Reset
+
+![Event ID 4724](eventid_4724_powershell.png)
+
+### MITRE ATT&CK
+
+**T1098 - Account Manipulation**
+
+### Detection Logic
+
+```spl
+EventCode=4724
+```
+
+### Findings
+
+A password reset operation generated Event ID 4724 in the Windows Security Log. Password resets should be reviewed to ensure they were authorized and performed by approved administrators.
+
+### Recommendation
+
+Monitor password reset activity and investigate unexpected administrative account actions.
