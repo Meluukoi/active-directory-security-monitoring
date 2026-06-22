@@ -50,9 +50,10 @@ EventCode=4720
 ```
 ### Screenshot
 
-#### Active Directory User Creation
+### Event ID 4720 - User Creation
 
-eventid_4720_user_created.png
+![Event ID 4720](screenshots/eventid_4720_user_created.png)
+
 
 ## Password Reset Investigation
 
@@ -74,9 +75,9 @@ The password for a domain user account was reset through Active Directory Users 
 
 ### Screenshot
 
-#### Active Directory User Creation - Password Reset
+ Event ID 4724 - Password Reset
 
-eventid_4724_password_reset.png
+![Event ID 4724](screenshots/eventid_4724_password_reset.png)
 
 ### MITRE ATT&CK
 
