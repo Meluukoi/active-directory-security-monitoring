@@ -155,7 +155,7 @@ A test user account was added to a privileged Active Directory security group.
 
 The following screenshot shows the Active Directory environment containing the user account and privileged security group.
 
-![Active Directory Users and Groups](ad_users_and_groups.png)
+![Active Directory Users and Groups](screenshots/ad_users_and_groups.png)
 
 ### Evidence
 
@@ -169,7 +169,7 @@ The following screenshot shows the Active Directory environment containing the u
 
 #### Event ID 4728 - Group Membership Change
 
-![Event ID 4728](eventid_4728_group_membership.png)
+![Event ID 4728](screenshots/eventid_4728_group_membership.png)
 
 ### Security Relevance
 
